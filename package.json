@@ -1,0 +1,25 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "babel -w src/index.js -o lib/index.js"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-es2015": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  }
+}
