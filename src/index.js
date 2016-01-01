@@ -9,7 +9,7 @@ const SAY = ['%c --> ', 'background: yellow; color: black'];
 const IMPOSSIBLE = ['%c IMPOSSIBLE ', 'background: red; color: white'];
 const METHODS = ['error', 'impossible', 'notImplemented', 'deprecated', 'say'];
 
-const logger = (name) => {
+export default name => {
   name = name ? name+' ::' : '';
   const log = makeLogger('log', name);
   METHODS.forEach(type => log[type] = makeLogger(type, name));
